@@ -4,4 +4,4 @@
     android:minWidth="150dp"
     android:resizeMode="horizontal|vertical"
     android:initialLayout="@layout/excited"
-    android:updatePeriodMillis="1800000"/>
+    android:updatePeriodMillis="7200000"/>

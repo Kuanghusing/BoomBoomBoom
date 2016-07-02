@@ -48,7 +48,7 @@ public class TimeProvider extends AppWidgetProvider {
 
     }
 
-    @Override
+/*    @Override
     public void onReceive(Context context, Intent intent) {
         super.onReceive(context, intent);
 
@@ -62,7 +62,7 @@ public class TimeProvider extends AppWidgetProvider {
             i = 0;
         }
 
-    }
+    }*/
 
     @Override
     public void onUpdate(Context context, AppWidgetManager appWidgetManager, int[] appWidgetIds) {
@@ -78,10 +78,10 @@ public class TimeProvider extends AppWidgetProvider {
             rv.setTextViewText(R.id.hour, getTime(time, Time.Hour));
             rv.setTextViewText(R.id.minute, getTime(time, Time.Minutes));
 
-            Intent i = new Intent(context, TimeProvider.class);
+            /*Intent i = new Intent(context, TimeProvider.class);
 
             PendingIntent pendingIntent = PendingIntent.getBroadcast(context, 0, i, 0);
-            rv.setOnClickPendingIntent(R.id.main, pendingIntent);
+            rv.setOnClickPendingIntent(R.id.main, pendingIntent);*/
 
             rv.setTextViewText(R.id.emoji, getRandomEmoji());
 
